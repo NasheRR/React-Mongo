@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: #DDDDDD;
+  position: relative;
+}
+
+form {
+  width: 100%;
+}
+
+a,
+input,
+button {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border: none;
+  border-spacing: 0px;
+}
+/*# sourceMappingURL=main.css.map*/
