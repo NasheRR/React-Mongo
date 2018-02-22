@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "node server.js",
+    "heroku": "node server.js",
     "start": "nodemon server.js --ignore src/ --ignore node_modules/ --ignore public/",
-    "build": "webpack --watch --colors"
+    "dev": "webpack --watch --colors --env.NODE_ENV=development  --env.url=http://localhost:3000",
+    "build": "webpack -p --colors --env.NODE_ENV=production --env.url=http://hosting.herokuapp.com"
   },
   "author": "",
   "license": "ISC",
